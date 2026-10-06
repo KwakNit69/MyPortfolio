@@ -1,1265 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <link rel="icon" type="image/png" href="assets/5555.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Romeo Omalay Jr. — App & Web Developer portfolio.">
-  <title>Romeo Omalay Jr. | App & Web Developer</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Romeo Omalay Jr. — Web & System Developer building business systems, dashboards, mobile apps, and practical digital solutions.">
+  <meta name="theme-color" content="#06111d">
+  <title>Romeo Omalay Jr. | Web & System Developer</title>
+  <link rel="icon" href="assets/5555.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="style.css">
-
-  <script>
-    document.documentElement.classList.add("js-enabled");
-  </script>
 </head>
 
 <body>
-
-  <!-- =========================
-       HEADER
-  ========================== -->
-
   <header class="site-header" id="header">
-
     <div class="container nav-wrap">
-
       <a class="brand" href="#home" aria-label="Romeo Omalay Jr. home">
-        <span class="brand-logo">RO</span>
-        <span class="brand-text">Romeo Omalay Jr.</span>
+        <span class="code-logo">&lt;/&gt;</span>
+        <span class="brand-copy"><strong>Romeo <em>Omalay Jr.</em></strong><small>Web &amp; System
+            Developer</small></span>
       </a>
-
-
-      <!-- MOBILE MENU BUTTON -->
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-
-      <!-- NAVIGATION -->
-
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><i
+          class="fa-solid fa-bars"></i></button>
       <nav class="nav" id="nav">
-
-        <a class="nav-link" href="#home">
-          Home
-        </a>
-
-        <a class="nav-link" href="#about">
-          About
-        </a>
-
-        <a class="nav-link" href="#skills">
-          Skills
-        </a>
-
-        <a class="nav-link" href="#projects">
-          Projects
-        </a>
-
-        <a class="nav-link" href="#services">
-          Services
-        </a>
-
-        <a class="nav-link" href="#contact">
-          Contact
-        </a>
-
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#stack">Tech Stack</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
-
-
-      <!-- DOWNLOAD CV -->
-
-      <a class="nav-cv" href="assets/Romeo_Omalay_Jr_CV.pdf" download="Romeo_Omalay_Jr_CV.pdf">
-        <i class="fa-solid fa-download"></i>
-
-        Download CV
-
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-
+      <a class="talk-btn" href="#contact"><i class="fa-regular fa-paper-plane"></i> Let's Talk</a>
     </div>
-
   </header>
 
-
-  <!-- =========================
-       MAIN
-  ========================== -->
-
   <main>
-
-
-    <!-- =========================
-         HOME
-    ========================== -->
-
-    <section class="page hero section-home" id="home">
-
-      <div class="hero-bg" aria-hidden="true"></div>
-
-
-      <div class="container page-inner hero-inner">
-
-        <div class="hero-copy">
-
-          <p class="eyebrow">
-            HI, I'M
-          </p>
-
-
-          <h1>
-            Romeo Omalay <span>Jr.</span>
-          </h1>
-
-
-          <h2>
-            App &amp; Web Developer
-          </h2>
-
-
-          <p class="hero-description">
-            I build modern web applications, mobile apps, and digital solutions
-            that turn ideas into functional products.
-          </p>
-
-
+    <section class="page-section hero" id="home">
+      <div class="hero-office"></div>
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">IDEAS <span>•</span> SYSTEMS <span>•</span> SOLUTIONS</p>
+          <h1>Building Smart <span>Digital Solutions</span></h1>
+          <p class="hero-desc">I design and develop modern web applications, business systems, dashboards, and mobile
+            apps that help organizations work smarter and grow faster.</p>
           <div class="hero-actions">
-
-            <a class="btn btn-primary" href="#projects">
-              View My Work
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-
-            <a class="btn btn-outline" href="#contact">
-              <i class="fa-regular fa-envelope"></i>
-              Let's Connect
-            </a>
-
+            <a class="btn primary" href="#projects"><i class="fa-regular fa-paper-plane"></i> View Projects <b>→</b></a>
+            <a class="btn ghost" href="#contact"><i class="fa-regular fa-user"></i> Hire Me</a>
           </div>
-
-
-          <div class="social-row">
-
-            <a href="https://github.com/kwaknit69" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-
-            <a href="#" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-
-            <a href="https://www.facebook.com/romeo21445" target="_blank" rel="noreferrer" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-
-            <a href="https://www.instagram.com/awtsqueue/" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-          </div>
-
-
-          <div class="availability">
-
-            <span></span>
-
-            Available for opportunities
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <a class="scroll-hint" href="#about">
-        <span></span>
-        Scroll to explore
-      </a>
-
-    </section>
-
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section class="page section section-about" id="about">
-
-      <div class="container page-inner">
-
-        <div class="section-label">
-          ABOUT ME
-        </div>
-
-
-        <div class="about-layout">
-
-
-          <!-- ABOUT TEXT -->
-
-          <div class="about-copy">
-
-            <h2 class="section-title">
-              More than just
-              <span>code.</span>
-            </h2>
-
-
-            <p>
-              I'm Romeo Omalay Jr., an App and Web Developer focused on building
-              practical, user-friendly digital solutions. I work across mobile
-              and web development, combining clean interfaces with reliable
-              backend systems and databases.
-            </p>
-
-
-            <p>
-              I'm passionate about technology, problem-solving, and creating
-              applications that make a real impact.
-            </p>
-
-
-            <a class="btn btn-primary small-btn" href="#contact">
-              Learn More About Me
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-          </div>
-
-
-          <!-- FACT CARDS -->
-
-          <div class="facts">
-
-
-            <article class="fact-card">
-
-              <div class="fact-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-
-              <div>
-
-                <strong>
-                  BSIT
-                </strong>
-
-                <span>
-                  4th Year Student
-                </span>
-
-                <small>
-                  Institute of Information and Communications Technology
-                </small>
-
-              </div>
-
+          <div class="hero-features">
+            <article><i class="fa-solid fa-code"></i><span><b>Clean Code</b><small>Scalable solutions</small></span>
             </article>
-
-
-            <article class="fact-card">
-
-              <div class="fact-icon">
-                <i class="fa-solid fa-code"></i>
-              </div>
-
-              <div>
-
-                <strong>
-                  6+
-                </strong>
-
-                <span>
-                  Major Projects
-                </span>
-
-                <small>
-                  Web, Mobile, AI, IoT
-                </small>
-
-              </div>
-
+            <article><i class="fa-solid fa-bolt"></i><span><b>Modern Tech</b><small>Responsive &amp; fast</small></span>
             </article>
-
-
-            <article class="fact-card">
-
-              <div class="fact-icon">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-
-              <div>
-
-                <strong>
-                  Always
-                </strong>
-
-                <span>
-                  Learning &amp; Improving
-                </span>
-
-                <small>
-                  Curious, building, experimenting
-                </small>
-
-              </div>
-
-            </article>
-
+            <article><i class="fa-solid fa-chart-column"></i><span><b>Business Focus</b><small>Real-world
+                  impact</small></span></article>
           </div>
-
-
-          <!-- ABOUT IMAGE -->
-
-          <div class="single-image-frame">
-
-            <img src="assets/about.png" alt="Developer workspace">
-
-          </div>
-
         </div>
-
+        <div class="hero-person reveal">
+          <div class="portrait-halo"></div>
+          <img class="portrait" src="assets/profile-cutout.png" alt="Romeo Omalay Jr. in formal business attire">
+          <p class="script-note">Turn<br>Ideas Into<br>Real Systems</p><span class="scribble"></span>
+          <div class="role-badge"><span class="dot"></span>
+            <div><b>Web Developer</b><small>System Developer<br>Problem Solver</small></div>
+          </div>
+        </div>
       </div>
-
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span>Scroll</span><i
+          class="fa-solid fa-chevron-down"></i></a>
     </section>
 
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section class="page section section-skills" id="skills">
-
-      <div class="container page-inner">
-
-
-        <div class="section-top">
-
-          <div>
-
-            <div class="section-label">
-              SKILLS
-            </div>
-
-            <h2 class="section-title">
-              Tech
-              <span>Stack.</span>
-            </h2>
-
+    <section class="page-section about-section" id="about">
+      <div class="section-glow glow-left"></div>
+      <div class="container about-layout">
+        <div class="about-story reveal">
+          <p class="section-label">ABOUT ME</p>
+          <h2>More than just <span>code.</span></h2>
+          <p class="lead">I'm Romeo Omalay Jr., a Bachelor of Science in Information Technology student and a web &amp;
+            system developer focused on building practical, user-friendly digital solutions.</p>
+          <p>I enjoy turning ideas into working systems by combining clean interfaces, reliable backend logic, organized
+            databases, and thoughtful user experiences. My work spans web applications, mobile development, dashboards,
+            inventory platforms, business tools, and system prototypes.</p>
+          <p>I am continuously improving through academic projects, real-world system development, research, testing,
+            and hands-on experimentation with new technologies. My goal is to build software that is useful,
+            maintainable, and genuinely solves a problem.</p>
+          <div class="about-tags"><span>Problem Solver</span><span>Detail-Oriented</span><span>Continuous Learner</span>
           </div>
-
-
-          <p>
-            Tools and technologies I use to bring ideas to life.
-          </p>
-
+          <a class="btn primary compact" href="assets/Romeo_Omalay_Jr_CV.pdf" target="_blank" rel="noreferrer">View My
+            CV <b>→</b></a>
         </div>
 
-
-        <div class="stack-grid">
-
-
-          <!-- MOBILE -->
-
-          <article class="stack-card">
-
-            <h3>
-              Mobile Development
-            </h3>
-
-            <div class="tech-list">
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/flutter/55b9f2" alt="Flutter">
-
-                <span>
-                  Flutter
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/dart/31a8e0" alt="Dart">
-
-                <span>
-                  Dart
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/androidstudio/3ddc84" alt="Android Studio">
-
-                <span>
-                  Android Studio
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/firebase/ffca28" alt="Firebase">
-
-                <span>
-                  Firebase
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- WEB -->
-
-          <article class="stack-card">
-
-            <h3>
-              Web Development
-            </h3>
-
-            <div class="tech-list">
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/html5/e34f26" alt="HTML5">
-
-                <span>
-                  HTML5
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/css/1572b6" alt="CSS">
-
-                <span>
-                  CSS
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="JavaScript">
-
-                <span>
-                  JavaScript
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <i class="fa-solid fa-display tech-fa" aria-hidden="true"></i>
-
-                <span>
-                  Responsive Design
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- BACKEND -->
-
-          <article class="stack-card">
-
-            <h3>
-              Backend &amp; Database
-            </h3>
-
-            <div class="tech-list">
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/python/3776ab" alt="Python">
-
-                <span>
-                  Python
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/mysql/4479a1" alt="MySQL">
-
-                <span>
-                  MySQL
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/firebase/ffca28" alt="Firebase">
-
-                <span>
-                  Firebase
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <i class="fa-solid fa-database tech-fa" aria-hidden="true"></i>
-
-                <span>
-                  Firestore
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- PROGRAMMING -->
-
-          <article class="stack-card">
-
-            <h3>
-              Programming
-            </h3>
-
-            <div class="tech-list">
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/openjdk/ed8b00" alt="Java">
-
-                <span>
-                  Java
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/kotlin/7f52ff" alt="Kotlin">
-
-                <span>
-                  Kotlin
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/python/3776ab" alt="Python">
-
-                <span>
-                  Python
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="JavaScript">
-
-                <span>
-                  JavaScript
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- TOOLS -->
-
-          <article class="stack-card">
-
-            <h3>
-              Tools &amp; Others
-            </h3>
-
-            <div class="tech-list">
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/git/f05032" alt="Git">
-
-                <span>
-                  Git
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
-
-                <span>
-                  GitHub
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="assets/vscode.svg" alt="VS Code">
-
-                <span>
-                  VS Code
-                </span>
-
-              </div>
-
-
-              <div class="tech">
-
-                <img src="https://cdn.simpleicons.org/figma/f24e1e" alt="Figma">
-
-                <span>
-                  Figma
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section class="page section section-projects" id="projects">
-
-      <div class="container page-inner">
-
-
-        <div class="section-top">
-
-          <div>
-
-            <div class="section-label">
-              FEATURED PROJECTS
-            </div>
-
-            <h2 class="section-title">
-              Projects I've
-              <span>Built.</span>
-            </h2>
-
-          </div>
-
-
-          <p>
-            A showcase of my work in mobile apps, web applications, AI, and more.
-          </p>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-          <!-- ATTENDIFY -->
-
-          <article class="project-card">
-
-            <div class="project-media">
-
-              <img src="assets/attendify.png" alt="Attendify project">
-
-              <span>
-                01
-              </span>
-
-            </div>
-
-
-            <div class="project-body">
-
-              <div class="project-type">
-                MOBILE APP
-              </div>
-
-              <h3>
-                Attendify
-              </h3>
-
-              <p>
-                A student attendance and event management app built with Flutter and Firebase.
+        <div class="about-facts reveal">
+          <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div>
+              <h3>BS Information Technology</h3><b>4th Year Student</b>
+              <p>Building a strong foundation in software development, databases, networking, and information systems.
               </p>
-
-              <div class="tags">
-
-                <span>
-                  Flutter
-                </span>
-
-                <span>
-                  Firebase
-                </span>
-
-              </div>
-
             </div>
-
           </article>
-
-
-          <!-- STOCKMASTER -->
-
-          <article class="project-card">
-
-            <div class="project-media">
-
-              <img src="assets/stockmaster.png" alt="StockMaster project">
-
-              <span>
-                02
-              </span>
-
+          <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-code"></i></span>
+            <div>
+              <h3>10+ Projects Built</h3><b>Web • Mobile • Systems</b>
+              <p>From school projects to end-to-end applications, dashboards, and management systems.</p>
             </div>
-
-
-            <div class="project-body">
-
-              <div class="project-type">
-                WEB APPLICATION
-              </div>
-
-              <h3>
-                StockMaster
-              </h3>
-
-              <p>
-                Inventory and POS system with admin and staff interfaces.
+          </article>
+          <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-heart"></i></span>
+            <div>
+              <h3>Always Learning</h3><b>Curious • Building • Improving</b>
+              <p>Exploring better workflows, cleaner code, modern frameworks, and practical tools that improve outcomes.
               </p>
-
-              <div class="tags">
-
-                <span>
-                  HTML
-                </span>
-
-                <span>
-                  CSS
-                </span>
-
-                <span>
-                  JavaScript
-                </span>
-
-              </div>
-
             </div>
-
           </article>
-
-
-          <!-- QUALIMEAT -->
-
-          <article class="project-card">
-
-            <div class="project-media">
-
-              <img src="assets/qualimeat.png" alt="QualiMeat project">
-
-              <span>
-                03
-              </span>
-
-            </div>
-
-
-            <div class="project-body">
-
-              <div class="project-type">
-                AI / MACHINE LEARNING
-              </div>
-
-              <h3>
-                QualiMeat
-              </h3>
-
-              <p>
-                CNN-based meat freshness classification system.
-              </p>
-
-              <div class="tags">
-
-                <span>
-                  Python
-                </span>
-
-                <span>
-                  TensorFlow
-                </span>
-
-                <span>
-                  TFLite
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- EZ MART -->
-
-          <article class="project-card">
-
-            <div class="project-media">
-
-              <img src="assets/ezmart.png" alt="EZ Mart project">
-
-              <span>
-                04
-              </span>
-
-            </div>
-
-
-            <div class="project-body">
-
-              <div class="project-type">
-                WEB SYSTEM
-              </div>
-
-              <h3>
-                EZ Mart
-              </h3>
-
-              <p>
-                Retail system for product management and sales.
-              </p>
-
-              <div class="tags">
-
-                <span>
-                  HTML
-                </span>
-
-                <span>
-                  CSS
-                </span>
-
-                <span>
-                  PHP
-                </span>
-
-                <span>
-                  MySQL
-                </span>
-
-              </div>
-
-            </div>
-
-          </article>
-
         </div>
 
+        <div class="about-visual reveal">
+          <img src="assets/about.png" alt="Developer working at a computer workstation">
+          <div class="visual-caption"><span class="dot"></span><b>Focused on useful technology</b><small>Designing
+              systems that make everyday work simpler.</small></div>
+        </div>
       </div>
-
     </section>
 
+    <!-- =========================================================
+     TECH STACK
+========================================================= -->
+<section class="page-section stack-section" id="stack">
 
+  <div class="stack-background-glow stack-glow-one"></div>
+  <div class="stack-background-glow stack-glow-two"></div>
 
-    <!-- =========================
-         SERVICES
-    ========================== -->
+  <div class="container stack-wrap">
 
-    <section class="page section section-services" id="services">
+    <!-- SECTION HEADER -->
+    <div class="stack-heading reveal">
 
-      <div class="container page-inner">
+      <div class="stack-heading-left">
+        <p class="section-label">MY TECH STACK</p>
 
-
-        <div class="section-top">
-
-          <div>
-
-            <div class="section-label">
-              SERVICES
-            </div>
-
-            <h2 class="section-title">
-              What I Can
-              <span>Do.</span>
-            </h2>
-
-          </div>
-
-
-          <p>
-            Solutions for your ideas and projects.
-          </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-
-          <article class="service-card">
-
-            <div class="service-icon">
-              <i class="fa-solid fa-laptop-code"></i>
-            </div>
-
-            <span class="service-no">
-              01
-            </span>
-
-            <h3>
-              Web Development
-            </h3>
-
-            <p>
-              Responsive websites and web applications.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <div class="service-icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
-            </div>
-
-            <span class="service-no">
-              02
-            </span>
-
-            <h3>
-              Mobile App Development
-            </h3>
-
-            <p>
-              Android and cross-platform apps using Flutter.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <div class="service-icon">
-              <i class="fa-solid fa-database"></i>
-            </div>
-
-            <span class="service-no">
-              03
-            </span>
-
-            <h3>
-              Database Systems
-            </h3>
-
-            <p>
-              MySQL, Firebase, and Firestore integration.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <div class="service-icon">
-              <i class="fa-solid fa-pen-ruler"></i>
-            </div>
-
-            <span class="service-no">
-              04
-            </span>
-
-            <h3>
-              UI/UX Implementation
-            </h3>
-
-            <p>
-              Modern and user-friendly interfaces.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <div class="service-icon">
-              <i class="fa-solid fa-cubes"></i>
-            </div>
-
-            <span class="service-no">
-              05
-            </span>
-
-            <h3>
-              System Development
-            </h3>
-
-            <p>
-              Custom systems for businesses, schools, and organizations.
-            </p>
-
-          </article>
-
-        </div>
-
+        <h2>
+          Tools &amp; Technologies
+          <span>I Work With</span>
+        </h2>
       </div>
 
-    </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="page contact-page section-contact" id="contact">
-
-      <div class="container page-inner contact-layout">
-
-
-        <!-- CONTACT INFORMATION -->
-
-        <div class="contact-copy">
-
-          <div class="section-label">
-            LET'S CONNECT
-          </div>
-
-
-          <h2>
-            Let's Build
-            <span>Something.</span>
-          </h2>
-
-
-          <p>
-            Have a project idea or just want to say hi?<br>
-            Feel free to reach out!
-          </p>
-
-
-          <div class="contact-details">
-
-            <a href="mailto:romeoomalayjr@gmail.com">
-
-              <i class="fa-regular fa-envelope"></i>
-
-              romeoomalay69@gmail.com
-
-            </a>
-
-
-            <span>
-
-              <i class="fa-solid fa-location-dot"></i>
-
-              Tagum City, Philippines
-
-            </span>
-
-          </div>
-
-
-          <div class="social-row">
-
-            <a href="https://github.com/kwaknit69" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-
-            <a href="#" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-
-            <a href="https://www.facebook.com/romeo21445" target="_blank" rel="noreferrer" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-
-            <a href="https://www.instagram.com/awtsqueue/" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <!-- CONTACT FORM -->
-
-        <form class="contact-form" id="contactForm">
-
-          <div class="form-row">
-
-            <label>
-
-              Your Name
-
-              <input name="name" required autocomplete="name" placeholder="Enter your name">
-
-            </label>
-
-
-            <label>
-
-              Your Email
-
-              <input name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-
-            </label>
-
-          </div>
-
-
-          <label>
-
-            Your Message
-
-            <textarea name="message" required placeholder="Tell me about your project..."></textarea>
-
-          </label>
-
-
-          <button class="btn btn-primary" type="submit">
-
-            Send Message
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-          </button>
-
-
-          <p class="form-note" id="formNote"></p>
-
-        </form>
-
-
-        <!-- QUOTE -->
-
-        <div class="quote">
-
-          <div class="quote-mark">
-            “
-          </div>
-
-
-          <p>
-            Ideas don't become real by themselves.<br>
-            <em>Let's build them together.</em>
-          </p>
-
-
-          <small>
-            — Romeo Omalay Jr.
-          </small>
-
-        </div>
-
+      <div class="stack-heading-right">
+        <span class="stack-heading-line"></span>
+
+        <p>
+          I work with a practical combination of programming languages,
+          frameworks, databases, mobile technologies, and development tools
+          to create responsive, maintainable, and scalable digital solutions.
+        </p>
       </div>
-
-    </section>
-
-  </main>
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer class="footer">
-
-    <div class="container footer-inner">
-
-      <p>
-        ©
-        <span id="year"></span>
-        Romeo Omalay Jr.
-        All rights reserved.
-      </p>
-
-
-      <p class="footer-motto">
-
-        Code
-        <b>•</b>
-        Create
-        <b>•</b>
-        Improve
-        <b>•</b>
-        Repeat
-
-      </p>
-
-
-      <a class="back-top" href="#home" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
 
     </div>
 
+
+    <!-- STACK GRID -->
+    <div class="stack-grid">
+
+
+      <!-- =====================================================
+           FRONTEND
+      ====================================================== -->
+      <article class="stack-card accent-orange reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-display"></i>
+          </div>
+
+          <div>
+            <h3>Frontend Development</h3>
+
+            <p>
+              Responsive, accessible, and user-friendly web interfaces.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+          <div class="tech-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-tailwindcss-original colored"></i>
+            <span>Tailwind CSS</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           BACKEND & FRAMEWORKS
+      ====================================================== -->
+      <article class="stack-card accent-blue reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
+
+          <div>
+            <h3>Backend &amp; Frameworks</h3>
+
+            <p>
+              Server-side development, APIs, business logic, and application
+              workflows.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+          <div class="tech-item">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-laravel-original colored"></i>
+            <span>Laravel</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-kotlin-plain colored"></i>
+            <span>Kotlin</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           DATABASE & CLOUD
+      ====================================================== -->
+      <article class="stack-card accent-cyan reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <div>
+            <h3>Database &amp; Cloud</h3>
+
+            <p>
+              Relational databases, realtime storage, authentication, and
+              backend services.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+          <div class="tech-item">
+            <i class="devicon-mysql-original colored"></i>
+            <span>MySQL</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-postgresql-plain colored"></i>
+            <span>PostgreSQL</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-firebase-plain colored"></i>
+            <span>Firebase</span>
+          </div>
+
+          <div class="tech-item supabase-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Supabase</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           MOBILE DEVELOPMENT
+      ====================================================== -->
+      <article class="stack-card accent-blue reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+
+          <div>
+            <h3>Mobile Development</h3>
+
+            <p>
+              Cross-platform and Android-focused mobile application
+              development.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+          <div class="tech-item">
+            <i class="devicon-flutter-plain colored"></i>
+            <span>Flutter</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-dart-plain colored"></i>
+            <span>Dart</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-kotlin-plain colored"></i>
+            <span>Kotlin</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           LANGUAGES
+      ====================================================== -->
+      <article class="stack-card accent-orange reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <div>
+            <h3>Programming Languages</h3>
+
+            <p>
+              Languages I use for web, mobile, backend, and application
+              development.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+          <div class="tech-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-kotlin-plain colored"></i>
+            <span>Kotlin</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-dart-plain colored"></i>
+            <span>Dart</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================================================
+           TOOLS & DESIGN
+      ====================================================== -->
+      <article class="stack-card accent-cyan reveal">
+
+        <div class="stack-card-header">
+
+          <div class="stack-card-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+
+          <div>
+            <h3>Tools &amp; Design</h3>
+
+            <p>
+              Development, version control, prototyping, local servers, and
+              design tools.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="tech-list tech-list-tools">
+
+          <div class="tech-item">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-vscode-plain colored"></i>
+            <span>VS Code</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-androidstudio-plain colored"></i>
+            <span>Android Studio</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="devicon-figma-plain colored"></i>
+            <span>Figma</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="fa-solid fa-server"></i>
+            <span>XAMPP</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="fa-solid fa-palette"></i>
+            <span>Canva</span>
+          </div>
+
+          <div class="tech-item">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Draw.io</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- BOTTOM DESCRIPTION -->
+    <div class="stack-footer-note reveal">
+
+      <div class="stack-footer-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+
+      <div>
+        <span>Always Learning</span>
+
+        <p>
+          My technology stack continues to grow as I explore new frameworks,
+          development practices, cloud services, and tools that can improve the
+          quality of the systems I build.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="page-section services" id="services">
+      <div class="container services-wrap">
+        <div class="section-title centered reveal">
+          <p class="section-label">MY SERVICES</p>
+          <h2>Complete Business Systems for <span>Modern Companies</span></h2>
+          <p>From internal tools to full business management systems, I build solutions that streamline operations,
+            improve efficiency, and support growth.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card warm reveal">
+            <div class="service-top"><i class="fa-solid fa-sitemap"></i>
+              <h3>ERP Solutions</h3>
+              <p>Run your whole business from one integrated system. Manage sales, purchases, inventory, finance and
+                more.</p>
+            </div>
+            <div class="service-shot"><img src="assets/service-erp-premium.png" alt="ERP dashboard"></div><a
+              href="#contact">Learn More <span>→</span></a>
+          </article>
+          <article class="service-card cool reveal">
+            <div class="service-top"><i class="fa-solid fa-chart-column"></i>
+              <h3>Admin Dashboards</h3>
+              <p>Get a clear overview of your business performance with powerful and interactive dashboards.</p>
+            </div>
+            <div class="service-shot"><img src="assets/service-admin-premium.png" alt="Admin dashboard"></div><a
+              href="#contact">Learn More <span>→</span></a>
+          </article>
+          <article class="service-card warm reveal">
+            <div class="service-top"><i class="fa-solid fa-users"></i>
+              <h3>CRM Systems</h3>
+              <p>Manage leads, customers, follow-ups, and sales in one place. Build stronger customer relationships.</p>
+            </div>
+            <div class="service-shot"><img src="assets/service-crm-premium.png" alt="CRM dashboard"></div><a
+              href="#contact">Learn More <span>→</span></a>
+          </article>
+          <article class="service-card cool reveal">
+            <div class="service-top"><i class="fa-solid fa-cube"></i>
+              <h3>Inventory Management</h3>
+              <p>Track stock, purchases, warehouses, and items with ease. Keep your business organized.</p>
+            </div>
+            <div class="service-shot"><img src="assets/service-inventory-premium.png" alt="Inventory dashboard"></div><a
+              href="#contact">Learn More <span>→</span></a>
+          </article>
+          <article class="service-card warm reveal">
+            <div class="service-top"><i class="fa-solid fa-users-gear"></i>
+              <h3>HR &amp; Payroll</h3>
+              <p>Manage employees, attendance, salaries, and records smoothly and efficiently.</p>
+            </div>
+            <div class="service-shot"><img src="assets/service-hr-premium.png" alt="HR and payroll dashboard"></div><a
+              href="#contact">Learn More <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section projects" id="projects">
+      <div class="container projects-wrap">
+        <div class="projects-head reveal">
+          <div>
+            <p class="section-label">FEATURED PROJECTS</p>
+            <h2>Some of My <span>Recent Work</span></h2>
+          </div><a class="small-btn" href="https://github.com/kwaknit69" target="_blank" rel="noreferrer">View All
+            Projects <span>→</span></a>
+        </div>
+        <div class="project-grid four">
+          <article class="project-card reveal">
+            <div class="project-img"><img src="assets/attendify.png" alt="Attendify project"></div>
+            <div class="project-info">
+              <div>
+                <h3>Attendify</h3>
+                <p>Student Attendance System • Flutter • Firebase</p>
+              </div><a href="https://github.com/kwaknit69" target="_blank" rel="noreferrer"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-img"><img src="assets/stockmaster.png" alt="StockMaster project"></div>
+            <div class="project-info">
+              <div>
+                <h3>StockMaster</h3>
+                <p>Inventory Management System • Web Application</p>
+              </div><a href="https://github.com/kwaknit69" target="_blank" rel="noreferrer"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-img"><img src="assets/qualimeat.png" alt="QualiMeat project"></div>
+            <div class="project-info">
+              <div>
+                <h3>QualiMeat</h3>
+                <p>Meat Freshness Classification • Web &amp; AI System</p>
+              </div><a href="https://github.com/KwakNit69/QualiMeatV3" target="_blank" rel="noreferrer"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-img"><img src="assets/ezmart.png" alt="EZ Mart project"></div>
+            <div class="project-info">
+              <div>
+                <h3>EZ Mart</h3>
+                <p>Retail / Point of Sale System • Web Application</p>
+              </div><a href="https://github.com/kwaknit69" target="_blank" rel="noreferrer"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section contact-section" id="contact">
+      <div class="section-glow glow-right"></div>
+      <div class="container contact-layout">
+        <div class="contact-intro reveal">
+          <p class="section-label">LET'S CONNECT</p>
+          <h2>Let's Build <span>Something.</span></h2>
+          <p>Have a project idea, collaboration, internship opportunity, or just want to say hi? Feel free to reach out.
+            I’d be happy to hear from you.</p>
+          <div class="contact-details">
+            <a href="mailto:romeoomalay69@gmail.com"><i
+                class="fa-regular fa-envelope"></i><span>romeoomalay69@gmail.com</span></a>
+            <a href="tel:+639095703153"><i class="fa-solid fa-phone"></i><span>0909 570 3153</span></a>
+            <span><i class="fa-solid fa-location-dot"></i><span>Philippines</span></span>
+          </div>
+          <div class="socials large-socials"><a href="https://github.com/kwaknit69" target="_blank"
+              aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/"
+              target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a
+              href="https://www.facebook.com/romeo21445" target="_blank" aria-label="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/" target="_blank"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <label>Your Name<input type="text" id="contactName" name="name" placeholder="Enter your name"
+                required></label>
+            <label>Your Email<input type="email" id="contactEmail" name="email" placeholder="you@example.com"
+                required></label>
+          </div>
+          <label>Your Message<textarea id="contactMessage" name="message" rows="7"
+              placeholder="Tell me about your project, idea, or opportunity..." required></textarea></label>
+          <button class="send-btn" type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note">This opens your default email app with the message prepared.</p>
+        </form>
+
+        <blockquote class="contact-quote reveal"><i class="fa-solid fa-quote-left"></i>
+          <p>Ideas don't become real by themselves.<br><strong>Let's build them together.</strong></p>
+          <footer>— Romeo Omalay Jr.</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <a class="brand footer-brand" href="#home"><span class="code-logo">&lt;/&gt;</span><span
+          class="brand-copy"><strong>Romeo <em>Omalay Jr.</em></strong><small>Web &amp; System
+            Developer</small></span></a>
+      <nav class="footer-nav"><a href="#home">Home</a><a href="#about">About</a><a href="#stack">Stack</a><a
+          href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+      <div class="copyright">© <span id="year"></span> Romeo Omalay Jr. All rights reserved.</div>
+    </div>
   </footer>
-
-
-
-  <!-- JAVASCRIPT -->
-
   <script src="script.js"></script>
-
 </body>
 
 </html>
