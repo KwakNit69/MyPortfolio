@@ -1,57 +1,19 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  const header=document.getElementById('header');
-  const nav=document.getElementById('nav');
-  const toggle=document.getElementById('menuToggle');
-  const links=[...document.querySelectorAll('.nav-link')];
-  const sections=[...document.querySelectorAll('main section[id]')];
-  const year=document.getElementById('year');
-  if(year) year.textContent=new Date().getFullYear();
-
-  const closeMenu=()=>{
-    nav?.classList.remove('open');
-    toggle?.setAttribute('aria-expanded','false');
-    const icon=toggle?.querySelector('i');
-    icon?.classList.add('fa-bars');
-    icon?.classList.remove('fa-xmark');
-  };
-
-  toggle?.addEventListener('click',()=>{
-    const open=nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded',String(open));
-    const icon=toggle.querySelector('i');
-    icon.classList.toggle('fa-bars',!open);
-    icon.classList.toggle('fa-xmark',open);
-  });
-  links.forEach(a=>a.addEventListener('click',closeMenu));
-
-  const onScroll=()=>header?.classList.toggle('scrolled',scrollY>18);
-  onScroll();
-  addEventListener('scroll',onScroll,{passive:true});
-
-  const activeObserver=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${entry.target.id}`));
-      }
-    });
-  },{rootMargin:'-38% 0px -52% 0px'});
-  sections.forEach(section=>activeObserver.observe(section));
-
-  const revealObserver=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){entry.target.classList.add('show');revealObserver.unobserve(entry.target)}
-    });
-  },{threshold:.08,rootMargin:'0px 0px -25px'});
-  document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
-
-  const form=document.getElementById('contactForm');
-  form?.addEventListener('submit',e=>{
-    e.preventDefault();
-    const name=document.getElementById('contactName').value.trim();
-    const email=document.getElementById('contactEmail').value.trim();
-    const message=document.getElementById('contactMessage').value.trim();
-    const subject=encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body=encodeURIComponent(`Hi Romeo,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`);
-    window.location.href=`mailto:romeoomalay69@gmail.com?subject=${subject}&body=${body}`;
-  });
+ const nav=document.getElementById('nav'),toggle=document.querySelector('.nav-toggle');
+ toggle?.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.querySelector('span').textContent=opened?'✕':'☰'});
+ nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false');const symbol=toggle?.querySelector('span');if(symbol)symbol.textContent='☰'}));
+ document.getElementById('year').textContent=new Date().getFullYear();
+ const progress=document.getElementById('progress');let ticking=false;
+ const update=()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max?scrollY/max*100:0}%`;ticking=false};
+ addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true}},{passive:true});update();
+ if('IntersectionObserver' in window){const reveal=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+ const secObs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)nav.querySelectorAll('a').forEach(link=>link.classList.toggle('active',link.hash===`#${entry.target.id}`))})},{rootMargin:'-30% 0px -55% 0px'});document.querySelectorAll('main section[id]').forEach(el=>secObs.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
+ const filters=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('.project-card');filters.forEach(btn=>btn.addEventListener('click',()=>{const filter=btn.dataset.filter;filters.forEach(b=>{const yes=b===btn;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',String(yes))});cards.forEach(card=>{card.hidden=filter!=='all'&&card.dataset.category!==filter})}));
+ const projects={attendify:{title:'Attendify',description:'A student attendance application built with Flutter and Firebase.',image:'assets/attendify.png'},stockmaster:{title:'StockMaster',description:'Inventory management for organized product and stock records.',image:'assets/stockmaster.png'},qualimeat:{title:'QualiMeat',description:'A camera-based pork freshness assessment application using YOLOv8 and a connected web portal.',image:'assets/qualimeat.png',link:'https://github.com/KwakNit69/QualiMeatV3'},ezmart:{title:'EZ Mart',description:'Retail POS and store management application.',image:'assets/ezmart.png'}};
+ const dialog=document.getElementById('projectModal');let lastFocus=null;
+ document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const p=projects[button.dataset.project];if(!p||!dialog)return;lastFocus=button;document.getElementById('modalTitle').textContent=p.title;document.getElementById('modalText').textContent=p.description;const img=document.getElementById('modalImage');img.src=p.image;img.alt=`${p.title} original project screenshot`;const links=document.getElementById('modalLinks');links.replaceChildren();if(p.link){const a=document.createElement('a');a.href=p.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent='VIEW GITHUB ↗';links.append(a)}dialog.showModal()}));
+ const close=()=>dialog?.close();document.querySelector('.modal-close')?.addEventListener('click',close);dialog?.addEventListener('click',event=>{if(event.target===dialog)close()});dialog?.addEventListener('close',()=>lastFocus?.focus());
+ const toast=document.getElementById('toast');let toastTimer;function notify(t){toast.textContent=t;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2400)}
+ document.getElementById('copyEmail')?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText('romeoomalay69@gmail.com');notify('Email address copied!')}catch{notify('Copy unavailable — use the email link instead.')}});
+ document.getElementById('contactForm')?.addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),subject=document.getElementById('subject').value.trim(),message=document.getElementById('message').value.trim();if(!name||!email||!subject||!message)return;const body=`Hello Romeo,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`;const url=`mailto:romeoomalay69@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;document.getElementById('formNote').textContent='Opening your email app. Please send the message there to complete your inquiry.';window.location.href=url});
 });
